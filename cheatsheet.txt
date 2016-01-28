@@ -36,3 +36,11 @@ put <filename> - upload a file
 get <filename> - upload a file
 
 http://cmis-hsteacher/~beth2005
+
+addition [+: x=1+2]
+subtraction [-: y=4-7.5]
+multiplication [*: z=13*-5]
+divisionj [/: a=8/4]
+exponent [**: b=3**4]
+modulo [%: c=9%2]
+floor [//: d=9//2]
