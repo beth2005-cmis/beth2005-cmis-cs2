@@ -17,7 +17,7 @@ def div(a, b):
 print div(2,3)
 #number of seconds to number of hours
 def hours_from_seconds(a):
-    return a / 3600
+    return float(a) / 3600
 print hours_from_seconds(86400)
 #one argument that represents the radius of a circle
 def circle_area(a):
@@ -49,17 +49,76 @@ def msg_box(word):
 print msg_box("Hello")
 print msg_box("I eat cats!")
 #call all the functions again
-print add(3,4)
-print sub(5,3)
-print mul(4,4)
-print div(2,3)
-print hours_from_seconds(86400)
-print circle_area(5)
-print sphere_volume(5)
-print avg_volume(10,20)
-print area(1,2,2.5)
-print right_align("Hello")
-print center("Hello")
-print msg_box("Hello")
-print msg_box("I eat cats!")
-print msg_box("output")
+def add(a, b):
+	return a + b
+a = 3
+b = 4
+c = 4
+d = 5
+z = add(a, b)
+x = add(c, d)
+print msg_box(str(z)+", "+str(x))
+def sub(a, b):
+    return a - b
+a = 5
+b = 3
+c = 6
+d = 4
+z = sub(a,b)
+x = sub(c,d)
+print msg_box(str(z)+", "+str(x))
+def mul(a, b):
+    return a * b
+a = 4
+b = 4
+c =3
+d =3
+z = mul(a,b)
+x = mul(c,d)
+print msg_box(str(z)+", "+str(x))
+def div(a, b):
+    return float(a) / b
+a = 2
+b = 3
+c = 3
+d =4
+z = div(a,b)
+x = div(c,d)
+print msg_box(str(z)+", "+str(x))
+def hours_from_seconds(a):
+    return a / 3600
+z = hours_from_seconds(86400)
+x = hours_from_seconds(90000)
+print msg_box(str(z)+", "+str(x))
+def circle_area(a):
+    return float(a)**2 * math.pi
+z = circle_area(5)
+x = circle_area(10)
+print msg_box(str(z)+", "+str(x))
+def sphere_volume(a):
+    return (float(a)**3 * math.pi *4)/3
+z = sphere_volume(5)
+x = sphere_volume(6)
+print msg_box(str(z)+", "+str(x))
+def avg_volume(a, b):
+    return ((((((float(a))/2)**3)*math.pi*4)/3)+(((((float(b))/2)**3)*math.pi*4)/3))/2
+z = avg_volume(10,20)
+x = avg_volume(5,10)
+print msg_box(str(z)+", "+str(x))
+def area(a, b, c):
+    return math.sqrt((((a+b+c)/2))*(((a+b+c)/2)-a)*(((a+b+c)/2)-b)*(((a+b+c)/2)-c))
+z = area(1,2,2.5)
+x= area(2,2,3.5)
+print msg_box(str(z)+", "+str(x))
+def right_align(word):
+    return (60-len(word))*" "+word
+z = right_align("Hello")
+x = right_align("wasup")
+print msg_box(z)
+print msg_box(x)
+def center(word):
+    return (34-len(word))*" "+word
+z = center("Hello")
+x = center("wasup")
+print msg_box(z)
+print msg_box(x)
