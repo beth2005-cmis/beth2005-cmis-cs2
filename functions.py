@@ -24,12 +24,15 @@ def circle_area(a):
     return float(a)**2 * math.pi
 print circle_area(5)
 #one argument that represents the radius of a sphere
-def sphere_volume(a):
-    return (float(a)**3 * math.pi *4)/3
+def sphere_volume(radius):
+    volume = (float(radius)**3 * math.pi *4)/3
+    return volume
 print sphere_volume(5)
 #two integer or float arguments that represent the diameters of a sphere
-def avg_volume(a, b):
-    return ((((((float(a))/2)**3)*math.pi*4)/3)+(((((float(b))/2)**3)*math.pi*4)/3))/2
+def avg_volume(diameter1, diameter2):
+    volume1 = sphere_volume(diameter1/2)
+    volume2 = sphere_volume(diameter2/2)
+    return (volume1 + volume2)/2
 print avg_volume(10,20)
 #three side lengths of a triangle as arguments
 def area(a, b, c):
