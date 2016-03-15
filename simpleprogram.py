@@ -37,3 +37,5 @@ def main():
     d= (int(-b)+math.sqrt(int(b)**2-4*int(a)*int(c))/2*int(a)
     out= output (name, a, b, c, d)
     print out
+
+main()
