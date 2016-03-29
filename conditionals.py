@@ -9,7 +9,7 @@ correct = 0
 incorrect = 0
 
 #List of question in Stage 1
-def addition(
+def addition_questions(
 
 #Instructions before the game starts
 print("You have 20 seconds to finish Stage 1.")
