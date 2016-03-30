@@ -9,11 +9,21 @@ correct = 0
 incorrect = 0
 
 #List of question in Stage 1
-def addition_questions(
+def addition_questions(x, y)
+minimum = 1
+maximum = 10
+minimum < random.randint < maximum
+x = random.randint
+y = random.rantint
+    return int('x + y')
 
 #Instructions before the game starts
 print("You have 20 seconds to finish Stage 1.")
 input("Hit 'enter' to begin")
+more= raw_input("If you want to quit the game, then type 'exit'")
+if more == "exit":
+    print Bye, Have a Nice Day!
+exit()
 
 #start the timer
 start = time.time()
@@ -38,7 +48,9 @@ end = time.time()
 print("Your time was: ", end - start, " seconds")
 print("You got ", correct, " correct.")
 print("You got ", incorrect, " incorrect.")
-if incorrect > 0:
+if incorrect > 2:
     print("Restart")
 else:
     print("You passed, so go HOME!")
+if (end - start) > 20
+    input("You're funny...Do it again!")
