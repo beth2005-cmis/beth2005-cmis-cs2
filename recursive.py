@@ -1,3 +1,4 @@
+#count down
 def countdown(n):
     if n <= 0:
         print "Blastoff"
@@ -6,11 +7,18 @@ def countdown(n):
         countdown(n-1)
 
 def count_down_from(start, stop):
-    print count_down_from(10,5)
+    if start < stop:
+        print "TEEHEE"
+    else:
+        print start
+        count_down_from(start - 1, stop)
+count_down_from(10, 1)
 
-def main():
-    countdown(5)
-    return
-main()
-
-
+#count up
+def countup(start, stop):
+	if start > stop:
+		print "TEEHEE"
+	else:
+		print start
+		countup(start + 1, stop)
+countup(1, 10)
