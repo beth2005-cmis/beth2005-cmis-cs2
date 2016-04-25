@@ -4,17 +4,18 @@
 #b) 1<2 or 4>5
 #c) 2=2 and 2<1
 
-#
+#3
+
 #2) What does 'return' do?
 # In computer programming, the 'return' executes the input of the function.
-#
-#
+
+#1
 
 #3) What are 2 ways indentation is important in python code?
 #a) tells you where the function end
 #b) if it's not indented, it is not part of the function
-#
-#
+
+#2
 
 #PART 2: Reading
 #Type the values for 12 of the 16 of the variables below.
@@ -22,12 +23,12 @@
 #problem1_a) -6
 #problem1_b) - square root of 3
 #problem1_c) 0
-#problem1_d) 
+#problem1_d) 5
 #
 #problem2_a) True
 #problem2_b) False
 #problem2_c) False
-#problem2_d) False
+#problem2_d) True
 #
 #problem3_a) 0.3
 #problem3_b) 0.5
@@ -39,6 +40,7 @@
 #problem4_c) 0.125
 #problem4_d) 5
 #
+#12 bonus 4
 
 #PART 3: Programming
 #Write a script that asks the user to type in 3 different numbers.
@@ -75,3 +77,5 @@ def main():
 
     print out
 main()
+
+#7
