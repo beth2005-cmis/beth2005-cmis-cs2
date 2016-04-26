@@ -1,16 +1,7 @@
-print "Running total: 0"
-
-def adder():
-    
-    running_total = 0
-    sum = next_number + running_total    
-    
-    next_number = float(raw_input("Next number: "))
-    if next_number == " ":
-        print "The sum is {}".format(sum)
+def adder(total, s):
+    if s == "":
+        print "Running total is " + str(total) + "."
     else:
-        running_total = next_number + running_total
-        print "Running total: {}".format(sum)
-    return
-
-
+        return total + s            
+    print "The sum is " + str(adder) + "."
+adder(0, raw_input)
