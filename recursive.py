@@ -38,24 +38,30 @@ def main():
 main()
 
 #biggest
-def biggest(n, biggest):
+def biggest(big):
+    n = raw_input("Next number: ")   
     if n == "":
-        return biggest
-    elif n >= biggest:
-        n = biggest
-        return biggest    
+        print "The biggest number is " + str(big)
     else: 
-        n = raw_input("Next number: " + str(n) + "\nNext number: ")
-        return n
-
-def main():
-    out = biggest(0, 0)
-    print "The biggest number is " + str(out)
-main()
-
+        if big > float(n):
+            biggest(big)
+        else:
+            biggest(float(n))
+biggest(-float("inf"))
 
 #smallest
+def smallest(small):
+    n = raw_input("Next number: ")   
+    if n == "":
+        print "The smallest number is " + str(small)
+    else: 
+        if small < float(n):
+            smallest(small)
+        else:
+            smallest(float(n))
+smallest(float("inf"))
 
 #pow
+
 
 
