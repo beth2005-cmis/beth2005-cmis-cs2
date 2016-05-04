@@ -61,7 +61,22 @@ def smallest(small):
             smallest(float(n))
 smallest(float("inf"))
 
-#pow
+#def smallest(number):
+#	n = raw_input("Next number: ")
+#    if n == "":
+#        return number
+#    else:
+#        n = float(n)
+#        if n < number;
+#            number = n
+#        return smallest(number)
+
+#def pow(x, n):
+#    if n == 0:
+#        return 1
+#    else:
+#        return x * pow(x, n-1)
+#pow(4, 4)
 
 
 
