@@ -3,35 +3,67 @@
 import math
 import random
 
-#Instructions before the game starts
-input("Hit 'enter' to begin")
-
-#Scores for each Stages
 correct = 0
 incorrect = 0
 
-#List of question in Stage 1
+#Instructions before the game starts
+input("Hit 'enter' to begin")
+
 def addition_questions():
     x = random.randint(1, 10)
-    y = random.rantint(1, 10)
-    return x + y
-print addition_questions
+    y = random.randint(1, 10)
+    answer = raw_input(str(x) + "+" + str(y))
+    actual_answer = x + y
+    if answer == actual_answer:
+        print("That's right!")
+        correct += 1
+    else:
+        print("That's wrong!")
+        incorrect += 1
+    x = random.randint(1, 10)
+    y = random.randint(1, 10)
+    answer2 = raw_input(str(x) + "+" + str(y))
+    actual_answer2 = x + y
+    if answer2 == actual_answer2:
+        print("That's right!")
+        correct += 1
+    else:
+        print("That's wrong!")
+        incorrect += 1
+    x = random.randint(1, 10)
+    y = random.randint(1, 10)
+    answer3 = raw_input(str(x) + "+" + str(y))
+    actual_answer3 = x + y
+    if answer3 == actual_answer3:
+        print("That's right!")
+        correct += 1
+    else:
+        print("That's wrong!")
+        incorrect += 1
+    x = random.randint(1, 10)
+    y = random.randint(1, 10)
+    answer4 = raw_input(str(x) + "+" + str(y))
+    actual_answer4 = x + y
+    if answer4 == actual_answer4:
+        print("That's right!")
+        correct += 1
+    else:
+        print("That's wrong!")
+        incorrect += 1
+    x = random.randint(1, 10)
+    y = random.randint(1, 10)
+    answer5 = raw_input(str(x) + "+" + str(y))
+    actual_answer5 = x + y
+    if answer5 == actual_answer5:
+        print("That's right!")
+        correct += 1
+    else:
+        print("That's wrong!")
+        incorrect += 1
 
-#compare answer to actual result
-if answer == result:
-	print("That's right!")
-    correct += 1
-else:
-    print("That's wrong!")
-    incorrect += 1
-print(q + " is " + str(result) + "\n\n")
-
-print("Your time was: ", end - start, " seconds")
-print("You got ", correct, " correct.")
-print("You got ", incorrect, " incorrect.")
+print "You got ", correct, " correct."
+print "You got ", incorrect, " incorrect."
 if incorrect > 2:
-    print("Restart")
+    print "game over"
 else:
-    print("You passed!")
-if (end - start) > 20
-    input("You're funny...Do it again!")
+    print "You passed!"
