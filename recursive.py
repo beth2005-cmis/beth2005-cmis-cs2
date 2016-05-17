@@ -78,5 +78,67 @@ smallest(float("inf"))
 #        return x * pow(x, n-1)
 #pow(4, 4)
 
+def countdown(n):
+	if n <= 0:
+		print "Blastoff!"
+	else:
+		print n
+		countdown(n-1)
 
+def countup(n):
+	if n > 9:
+		print "Blah"
+	else:
+		print n
+		countup(n+1)
+
+def countdown_from_to(start, stop):
+	if start == stop:
+		print "Something"
+	else:
+		print start
+		countdown_from_to(start-1, stop)
+
+def countup_from_to(start, stop):
+	if start >= stop:
+		print "SE"
+	else:
+		print start
+		countup_from_to(start+1, stop)
+
+def adder(total):
+	print "Running total: {}".format(total)	
+	n = raw_input("n: ")
+	if n == "":			
+		print "bye"
+	else:
+		total += int(n)
+		adder(total)
+
+def biggest(number):
+	n = raw_input("Next number: ")
+	if n == "":
+		return number
+	else:
+		n = float(n)
+		if n > number:
+			number = n
+		return biggest(number)
+
+
+def smallest(number):
+	n = raw_input("Next number: ")
+	if n == "":
+		return number
+	else:
+		n = float(n)
+		if n < number:
+			number = n
+		return smallest(number)
+
+def pow(x, n):
+	if n == 0:
+		return 1
+	else:
+		return x * pow(x, n-1)
 
