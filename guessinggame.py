@@ -1,15 +1,18 @@
-import random.randint
-1 <= random.randint <= 100
+import random
 
-def guess(n, g_n):
-    n = random.randint
-    g_n = raw_input("Guess: ")
-    if n == g_n:
+def guess(n, total_pt):
+
+    g_n = int(raw_input("Guess: "))
+    if g_n == n:
+        print "You got " + str(total_pt) + " wrong!"
+    elif g_n == n:
         print "You're Awesome!"
-        return guess(n, g_n)
-    elif n < g_n:
+    elif g_n > n:
         print "It's too big"
-    elif n > g_n:
-        print "It's too small"
+        guess(n, total_pt + 1)
     else:
-        
+        print "It's too small"
+        total_pt + 1
+        guess(n, total_pt + 1)
+
+guess(random.randint(1, 10), 0)

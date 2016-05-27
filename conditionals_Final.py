@@ -86,3 +86,12 @@ def main():
     multi_question(x, y, times, m_correct, m_incorrect)
 main()
 
+v = raw_input("Are you pretty? ")
+if v == "yes":
+	print "YOU're actually ugly."
+
+if v == "no":
+    print "Das righ"
+else:
+    print "BUt you're ugly."
+
