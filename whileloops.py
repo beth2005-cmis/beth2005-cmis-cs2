@@ -37,12 +37,31 @@
 #            y += 1
 #countfrom(-10,10)
 
-def sum_of_odds(n):
-    if n < 0:
-            while n <= 0:
-                print n
-                n += 1
-    else:
-        while n >= 0:
-            print n
-sum_of_odds(10)
+#def sum_of_odds(n):
+#    total = 0
+#    if n > 0:
+#        while n > 0:
+#            if n % 2 == 1:
+#                total += n
+#            n -= 1
+#    elif n < 0:
+#        while n < 0:
+#            if n % 2 == 1:
+#                total += n
+#            n += 1
+#    return total
+#print sum_of_odds(10)
+
+def grid(w, h):
+    out = ""
+    while h > 0:
+        while w > 0:
+            out += "."
+            w -= 1
+        out += "\n"
+        h -= 1
+            
+
+
+
+

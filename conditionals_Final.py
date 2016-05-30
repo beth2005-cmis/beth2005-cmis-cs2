@@ -1,5 +1,24 @@
 #My scrip is a math game. You are given five questions in three different stages. Your goal is to finish the given task. 
 
+
+v = raw_input("Are you pretty? ")
+if v == "yes":
+	print "YOU're actually ugly."
+
+if v == "no":
+    print "Das righ"
+else:
+    print "It's okay"
+
+r = raw_input("Are you smart? ")
+if v == "yes":
+    print "YOU're actually dumb."
+
+if r == "no":
+    print "Das righ"
+else:
+    print "Let's test your IQ"
+
 import math
 import random
 
@@ -85,13 +104,4 @@ def main():
     subtraction_question(x, y, times, s_correct, s_incorrect)
     multi_question(x, y, times, m_correct, m_incorrect)
 main()
-
-v = raw_input("Are you pretty? ")
-if v == "yes":
-	print "YOU're actually ugly."
-
-if v == "no":
-    print "Das righ"
-else:
-    print "BUt you're ugly."
 
