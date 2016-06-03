@@ -1,23 +1,59 @@
-#My scrip is a math game. You are given five questions in three different stages. Your goal is to finish the given task. 
+#My scrip is a math game. You are given five questions in three different stages. Your goal is to finish the given task. l operators at least once. 
 
+v = raw_input("Guess a number from 1 ~ 3: ")
+def guess_n(v):
+    if v == 2:
+        return True
+guess_n(v)
 
-v = raw_input("Are you pretty? ")
-if v == "yes":
-	print "YOU're actually ugly."
-
-if v == "no":
-    print "Das righ"
+if v:
+    print "yes it's always 2"
 else:
-    print "It's okay"
+    print "you don't have a second chance"
 
-r = raw_input("Are you smart? ")
-if v == "yes":
-    print "YOU're actually dumb."
 
-if r == "no":
-    print "Das righ"
+def q2(r, k):  
+    if r == k:
+        return True
+    else:
+        return False
+a = 2
+def q3(a):
+    a = 1+1
+    a = True
+    if a == 2:
+        return 1
+q3(a)
+if a:
+    print "there's 2 apples"
 else:
-    print "Let's test your IQ"
+    print "both apples are mine"
+
+
+s = raw_input("Do you Enlish? ")
+def q4(s):
+    if s == "no":
+        print "LOL"
+    else:
+        return "haha"
+q4(s)
+
+if s:
+    print s
+
+yey = 4
+if int(yey) < int(3) or int(yey) > int(3):
+	print"Show me"
+elif not int(yey) < int(6) or int(yey) > int(6):
+	print"The"
+else:
+	print"Swaggg"
+
+if yey != int(3) and yey != int(6) and yey != int(9):
+	print "The"
+if yey != int(3) and yey != int(6) and yey != int(9):
+	print "Swaggg"
+
 
 import math
 import random
@@ -54,7 +90,6 @@ You got {} correct.
         print("That's wrong!")
         a_incorrect = a_incorrect + 1
         addition_question(x, y, times - 1, a_correct, a_incorrect) 
-
 
 def subtraction_question(x, y, times, s_correct, s_incorrect):
     x = random.randint(1, 10)
@@ -105,3 +140,4 @@ def main():
     multi_question(x, y, times, m_correct, m_incorrect)
 main()
 
+print "OKIEE \nBYE HAVE A NICE DAY \nSWAG."
